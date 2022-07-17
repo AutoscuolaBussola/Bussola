@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: sticky;
+    top:0;
+    z-index: 1;
+  }
+  .navbar ul
+  {
+    display: flex;
+    list-style: none;
+    margin:20px 0px;
+  }
+  
+  .navbar ul li
+  {
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .navbar ul li a 
+  {
+
+    position: relative;
+    color:white;
+    text-decoration: none;
+    padding:10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+  
+  }
+  .navbar ul li a::after{
+    content: '';
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom:-3px;
+    transition: 0.3s;
+  }
+  
+  
+  .navbar ul li a:hover::after{
+    width: 100%;
+  
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .headings{
+        font-size: 2.5rem;
+    }
+    .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  }
+  
+  
+  a{
+    text-decoration: none;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/immagini/Ilaria.JPG");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.header-content{
+    margin-bottom: 150px;
+    color:whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: blue;
+    margin:10px auto;
+    border-radius: 5px;
+     
+}
+
+.header-content h1{
+    font-size: 7vmin; 
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding:8px 15px;
+    background: blue;
+    border-radius: 30px;
+    color:whitesmoke;
+
+}
+.ctn{
+    padding:8px 15px;
+    background: blue;
+    border-radius: 30px;
+    color:whitesmoke;
+  
+  }
+  .line{
+    width: 150px;
+    height: 4px;
+    background: blue;
+    margin:10px auto;
+    border-radius: 5px;
+     
+}
+a{
+    text-decoration: none;
+}
+
+
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/immagini/Circuito.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+
+.explore-content{
+     width: 60%;
+     padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.explore-content h1{
+    font-size: 7vmin;
+   
+}
+
+.explore-content .line{
+    margin-bottom: 50px;
+}
+.explore-content p{
+    color:white;
+
+}
+.explore-content .ctn{
+    margin-top: 40px;
+}
+
+
+.container{
+    max-width: 1170px; 
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ul{
+    list-style: none;
+
+}
+.footer{
+    background-color: red; 
+    padding: 70px 0;
+
+}
+.footer-col{
+    width: 25%;
+    padding:0 15px;
+}
+.footer-col h4{
+    font-size:18px;
+    color:#ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+
+}
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    background-color: blue;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+  
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color:#ffffff;
+  padding-left: 8px;
+
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color:#ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color:#24262b;
+    background-color: #ffffff;
+
+}
+a{
+    margin-left: 5px;
+}
+
+@media(max-width:767px)
+{
+    .footer-col{
+        width: 50%;
+        margin-bottom:30px;
+    }
+}
+@media(max-width:574px)
+{
+    .footer-col{
+        width: 100%;
+    }
+}
+
+.body{
+    margin:0;
+    padding:0;
+}
+.services{
+    background: #c0c0c0;
+    text-align: center;
+
+}
+.services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid blue;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+.cen{
+    max-width: 1200;
+    margin: auto;
+    overflow: hidden;
+    padding:20px;
+}
+.service{
+    display: inline-block;
+    width: calc(100% /3 );
+    margin:0 -2px;
+    padding:20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.service:hover{
+    background: #ddd;
+}
+
+.service i{
+    color:blue;
+    font-size: 34px;
+    margin-bottom:30px;
+}
+
+.service mat-icon{
+    color:blue;
+    font-size: 34px;
+    margin-bottom:30px;
+}
+
+.service h2{
+    font-size:18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin:0;
+}
+
+.service p{
+    color:grey;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .service{
+        width: 50%;
+
+    }
+}
+@media screen and (max-width:500px) {
+    .service{
+        width: 100%;
+        
+    }
+   
+}
+
+@media screen and (min-width:1024px ) {
+    .services{
+        height: 500px;
+        
+    }
+}
